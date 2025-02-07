@@ -1,0 +1,170 @@
+[
+  {
+    "nombre": "Patatas Bravas",
+    "precio": "5.50 €",
+    "descripcion": "Patatas fritas crujientes servidas con una salsa brava picante y alioli casero.",
+    "imagen": "/assets/menu/PatatasBravas.jpeg",
+    "ingredientes": ["Patatas", "Aceite de oliva", "Salsa brava", "Alioli"],
+    "alergenos": ["Huevos", "Mostaza"]
+  },
+  {
+    "nombre": "Calamares a la Romana",
+    "precio": "7.00 €",
+    "descripcion": "Calamares frescos rebozados y fritos, servidos con rodajas de limón y mayonesa.",
+    "imagen": "/assets/menu/CalamaresRomana.jpeg",
+    "ingredientes": ["Calamares", "Harina", "Huevo", "Aceite"],
+    "alergenos": ["Gluten", "Huevos", "Moluscos"]
+  },
+  {
+    "nombre": "Gambas al Ajillo",
+    "precio": "9.00 €",
+    "descripcion": "Gambas salteadas en aceite de oliva con ajo y guindilla, servidas con pan crujiente.",
+    "imagen": "/assets/menu/GambasAjillo.jpeg",
+    "ingredientes": ["Gambas", "Ajo", "Aceite de oliva", "Guindilla", "Pan"],
+    "alergenos": ["Gluten", "Crustáceos"]
+  },
+  {
+    "nombre": "Cerveza Artesana",
+    "precio": "6.00 €",
+    "descripcion": "Variedad de cervezas artesanas locales, cada una con su propio sabor único y carácter distintivo.",
+    "imagen": "/assets/menu/CervezaArtesana.jpeg",
+    "ingredientes": ["Malta", "Lúpulo", "Levadura", "Agua"],
+    "alergenos": ["Gluten"]
+  },
+  {
+    "nombre": "Vino de la Casa",
+    "precio": "12.00 €",
+    "descripcion": "Selección de vinos locales y nacionales, cuidadosamente elegidos para complementar cualquier comida.",
+    "imagen": "/assets/menu/VinoCasa.jpeg",
+    "ingredientes": ["Uvas", "Sulfito"],
+    "alergenos": ["Sulfito"]
+  },
+  {
+    "nombre": "Whisky especial",
+    "precio": "9.50 €",
+    "descripcion": "Un elixir dorado, destilado con paciencia y maestría. Sus aromas, una sinfonía de especias exóticas y maderas nobles, invitan a un viaje sensorial.",
+    "imagen": "/assets/menu/Whisky.jpeg",
+    "ingredientes": ["Cebada", "Agua", "Levadura"],
+    "alergenos": []
+  },
+  {
+    "nombre": "Espresso",
+    "precio": "4.00 €",
+    "descripcion": "El café espresso es una bebida fuerte y concentrada que se prepara forzando agua caliente a través de una pequeña cantidad de café molido.",
+    "imagen": "/assets/menu/Espresso.jpeg",
+    "ingredientes": ["Café"],
+    "alergenos": []
+  },
+  {
+    "nombre": "Cappuccino",
+    "precio": "5.00 €",
+    "descripcion": "El café cappuccino es una combinación de espresso, leche caliente espumosa y una capa de espuma de leche en la parte superior.",
+    "imagen": "/assets/menu/Cappuccino.jpeg",
+    "ingredientes": ["Café", "Leche"],
+    "alergenos": ["Lácteos"]
+  },
+  {
+    "nombre": "Americano",
+    "precio": "4.00 €",
+    "descripcion": "El café americano se prepara añadiendo agua caliente al espresso, lo que resulta en una bebida menos concentrada y más suave.",
+    "imagen": "/assets/menu/Americano.jpeg",
+    "ingredientes": ["Café", "Agua"],
+    "alergenos": []
+  },
+  {
+    "nombre": "Agua Mineral",
+    "precio": 3.0,
+    "descripcion": "Agua mineral con o sin gas, servida fría para refrescarte en cualquier momento.",
+    "imagen": "/assets/menu/AguaMineral.jpeg",
+    "ingredientes": ["Agua"],
+    "alergenos": []
+  },
+  {
+    "nombre": "Refrescos",
+    "precio": 4.0,
+    "descripcion": "Variedad de refrescos, incluyendo cola, limón, naranja y más, servidos con hielo.",
+    "imagen": "/assets/menu/Refrescos.jpeg",
+    "ingredientes": ["Agua carbonatada", "Azúcar", "Colorantes", "Saborizantes"],
+    "alergenos": ["Sulfitos"]
+  },
+  {
+    "nombre": "Zumo Natural",
+    "precio": 4.5,
+    "descripcion": "Jugo natural recién exprimido de naranjas, manzanas o zanahorias, lleno de vitaminas.",
+    "imagen": "/assets/menu/ZumoNatural.jpeg",
+    "ingredientes": ["Naranja", "Manzana", "Zanahoria"],
+    "alergenos": []
+  },
+  {
+    "nombre": "Tarta de Queso",
+    "precio": 7.5,
+    "descripcion": "Tarta de queso cremosa con base de galleta y una capa de mermelada de frutos rojos, servida con crema batida.",
+    "imagen": "/assets/menu/TartaQueso.jpeg",
+    "ingredientes": ["Queso crema", "Galleta", "Mantequilla", "Azúcar", "Huevos", "Mermelada de frutos rojos"],
+    "alergenos": ["Gluten", "Lácteos", "Huevo"]
+  },
+  {
+    "nombre": "Helado de Vainilla",
+    "precio": 4.0,
+    "descripcion": "Helado de vainilla suave y cremoso, servido con sirope de chocolate y nueces caramelizadas.",
+    "imagen": "/assets/menu/HeladoVainilla.jpeg",
+    "ingredientes": ["Leche", "Azúcar", "Vainilla", "Huevo"],
+    "alergenos": ["Lácteos", "Huevo", "Frutos secos"]
+  },
+  {
+    "nombre": "Tiramisú",
+    "precio": 8.0,
+    "descripcion": "Clásico tiramisú italiano con capas de bizcocho empapado en café, crema de mascarpone y cacao en polvo.",
+    "imagen": "/assets/menu/Tiramisu.jpeg",
+    "ingredientes": ["Café", "Mascarpone", "Bizcocho", "Cacao", "Azúcar", "Huevos"],
+    "alergenos": ["Gluten", "Lácteos", "Huevo"]
+  },
+  {
+    "nombre": "Mojito",
+    "precio": 8.0,
+    "descripcion": "Refrescante cóctel de ron, hierbabuena, azúcar, lima y soda, servido con hielo.",
+    "imagen": "/assets/menu/Mojito.jpeg",
+    "ingredientes": ["Ron", "Hierbabuena", "Azúcar", "Lima", "Soda"],
+    "alergenos": []
+  },
+  {
+    "nombre": "Margarita",
+    "precio": 9.0,
+    "descripcion": "Clásico cóctel de tequila, triple sec, jugo de lima y sal, servido en una copa escarchada.",
+    "imagen": "/assets/menu/Margarita.jpeg",
+    "ingredientes": ["Tequila", "Triple sec", "Jugo de lima", "Sal"],
+    "alergenos": []
+  },
+  {
+    "nombre": "Piña Colada",
+    "precio": 8.5,
+    "descripcion": "Delicioso cóctel de ron, crema de coco y jugo de piña, servido con hielo y una rodaja de piña.",
+    "imagen": "/assets/menu/PiñaColada.jpeg",
+    "ingredientes": ["Ron", "Crema de coco", "Jugo de piña"],
+    "alergenos": []
+  },
+  {
+    "nombre": "Filete de Res",
+    "precio": 18.0,
+    "descripcion": "Filete de res a la parrilla, servido con papas fritas doradas y una mezcla de verduras asadas al horno.",
+    "imagen": "/assets/menu/FileteRes.jpeg",
+    "ingredientes": ["Res", "Papas", "Verduras"],
+    "alergenos": []
+  },
+  {
+    "nombre": "Pollo al Curry",
+    "precio": 15.0,
+    "descripcion": "Pollo cocido en una rica salsa de curry con especias, acompañado de arroz basmati y pan naan fresco.",
+    "imagen": "/assets/menu/PolloCurry.jpeg",
+    "ingredientes": ["Pollo", "Curry", "Especias", "Arroz basmati", "Pan naan"],
+    "alergenos": ["Gluten"]
+  },
+  {
+    "nombre": "Paella Valenciana",
+    "precio": 20.0,
+    "descripcion": "Tradicional paella valenciana con arroz, mariscos frescos, pollo, conejo y una mezcla de verduras, cocinada a fuego lento.",
+    "imagen": "/assets/menu/Paella.jpeg",
+    "ingredientes": ["Arroz", "Mariscos", "Pollo", "Conejo", "Verduras"],
+    "alergenos": ["Gluten", "Mariscos"]
+  }
+]

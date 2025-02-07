@@ -1,0 +1,134 @@
+.cookie-banner {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    background-color: rgba(0, 0, 0, 0.90);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 2000;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.titulo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #D9A441;
+    margin-bottom: 10px;
+}
+
+.texto {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Contenedor de botones */
+.cookie-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilos generales de los botones */
+.cookie-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Botón de aceptar */
+.cookie-button.aceptar {
+    background-color: #D9A441;
+    color: black;
+}
+
+.cookie-button.aceptar:hover {
+    background-color: #b5832d;
+    transform: scale(1.05);
+}
+
+/* Botón de rechazar */
+.cookie-button.rechazar {
+    background-color: white;
+    color: black;
+}
+
+.cookie-button.rechazar:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .cookie-banner {
+        width: 85%;
+        padding: 15px;
+        bottom: 10px;
+
+    }
+
+    .titulo {
+        font-size: 16px;
+    }
+
+    .texto {
+        font-size: 12px;
+    }
+
+    .cookie-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cookie-button {
+        width: 100%;
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+}
+
+/* Responsive para tablets */
+@media (max-width: 1025px) {
+    .cookie-banner {
+        width: 85%;
+        padding: 18px;
+    }
+
+    .titulo {
+        font-size: 17px;
+    }
+
+    .texto {
+        font-size: 13px;
+    }
+
+    .cookie-button {
+        font-size: 13px;
+        padding: 9px 18px;
+    }
+}

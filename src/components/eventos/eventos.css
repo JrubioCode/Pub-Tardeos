@@ -1,0 +1,137 @@
+* {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.eventos-container {
+  padding: 20px;
+  background-color: #e2b768;
+  background-image: url("https://www.transparenttextures.com/patterns/food.png");
+}
+
+.titulo-evento {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 35px;
+  border-bottom: 1px solid #000000;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.evento-card {
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(217, 164, 65, 0.1), 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin: 20px 0;
+  transition: all 0.3s ease;
+  border-left: 1px solid #d9a441;
+  border-bottom: 1px solid #d9a441;
+}
+
+.evento-card:hover {
+  box-shadow: 0 12px 25px #d9a441, 0 8px 15px #9e762c;
+  transform: translateY(-2px);
+}
+
+.evento-img {
+  width: 100%;
+  max-width: 250px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 20px;
+  flex-shrink: 0; /* Evita que las imágenes se reduzcan demasiado */
+}
+
+.evento-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section h2 {
+  color: #333;
+  border-bottom: 1px solid black;
+}
+
+.evento-info h3 {
+  color: #d9a441;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.evento-info p {
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.eventos-lista {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .titulo-evento {
+      font-size: 30px;
+  }
+
+  .eventos-lista {
+      grid-template-columns: 1fr;
+  }
+
+  .evento-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .evento-img {
+      width: 100%;
+      height: auto;
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .titulo-evento {
+      font-size: 32px;
+  }
+
+  .eventos-lista {
+
+      gap: 15px;
+  }
+
+  .evento-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 15px;
+  }
+
+  .evento-img {
+      max-width: 220px;
+      height: auto;
+      margin-right: 0;
+      margin-bottom: 15px;
+  }
+
+  .evento-info h3 {
+      font-size: 1.3rem;
+  }
+
+  .evento-info p {
+      font-size: 14px;
+  }
+}

@@ -1,0 +1,128 @@
+/* Estilos generales */
+* {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.reseñas-container {
+  padding: 50px 20px;
+  background: #f8f8f8;
+}
+
+.reseñas-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+.reseñas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.reseñas.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reseñas.noVisible {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.reseña {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(217, 164, 65, 0.1), 0 4px 10px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+  border-left: 1px solid #D9A441;
+  border-bottom: 1px solid #D9A441;
+  opacity: 0; /* Inicialmente invisible */
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+  transition-delay: 0s; /* Se sobrescribe dinámicamente */
+}
+
+.reseñas.visible .reseña {
+  opacity: 1; /* Visible al activarse */
+  transform: translateY(0);
+}
+
+.reseña:hover {
+  box-shadow: 0 12px 25px #D9A441, 0 8px 15px #9e762c;
+  transform: translateY(-2px);
+}
+
+.reseña-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.perfil-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.reseña-info h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.2em;
+}
+
+.estrellas {
+  color: #D9A441;
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+
+.fecha {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.comentario {
+  color: #444;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .reseñas {
+      grid-template-columns: 1fr;
+  }
+  
+  .reseña {
+      margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .reseñas-container h2 {
+    font-size: 35px;
+  }
+
+  .perfil-img {
+    width: 85px;
+    height: 85px;
+  }
+
+  .reseña-info h3 {
+    font-size: 1.2em;
+  }
+
+  .comentario {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,59 @@
+/* Estilos generales */
+* {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.carousel {
+  overflow: hidden;
+  position: relative;
+  width: 82%;
+  margin: 25px auto;
+  border: #d9a441 4px solid;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.carousel.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.carousel.noVisible {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .carousel {
+    display: none;
+  }
+}
+
+/* Responsive para tablets */
+@media (max-width: 1025px) {
+  .carousel {
+    width: 90%;
+    border-width: 3px;
+    border-radius: 9px;
+  }
+
+  .slide {
+    height: 450px;
+  }
+}

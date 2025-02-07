@@ -1,0 +1,158 @@
+/* Estilos generales */
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #383535;
+    color: #fff;
+    gap: 300px;
+    padding: 0 15px;
+    flex-wrap: wrap;
+}
+
+.logo-redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin: 0 10px;
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: -30px;
+}
+
+.redes a {
+    padding: 0 10px;
+}
+
+.redes img {
+    width: 45px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.redes img:hover {
+    transform: scale(1.2);
+}
+
+/* Información, términos y contacto */
+.informacion-terminos {
+    display: flex;
+    gap: 100px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.informacion, .terminos, .contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.informacion h3, .terminos h3, .contacto h3 {
+    font-size: 28px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: -10px;
+}
+
+.informacion ul, .terminos ul, .contacto ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.informacion .link-footer, .terminos .link-footer, .contacto a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.informacion .link-footer:hover, .terminos .link-footer:hover, .contacto a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .redes img {
+        width: 35px;
+        height: auto;
+    }
+
+    .informacion-terminos {
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 20px;
+    }
+
+    .informacion h3, .terminos h3, .contacto h3 {
+        font-size: 22px;
+    }
+
+    .informacion ul li .link-footer, 
+    .terminos ul li .link-footer,
+    .contacto ul li a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer {
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 100px;
+        padding: 20px;
+    }
+
+    .logo img {
+        width: 140px;
+        height: auto;
+    }
+
+    .redes img {
+        width: 40px;
+    }
+
+    .informacion-terminos {
+        gap: 50px;
+        margin-top: -70px;
+        text-align: center;
+    }
+
+    .informacion, .terminos, .contacto {
+        align-items: center;
+    }
+
+    .informacion h3, .terminos h3, .contacto h3 {
+        font-size: 24px;
+    }
+
+    .informacion .link-footer, 
+    .terminos .link-footer, 
+    .contacto a {
+        font-size: 16px;
+    }
+}

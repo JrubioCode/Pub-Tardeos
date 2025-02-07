@@ -1,0 +1,159 @@
+/* Estilos generales */
+* {
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+/* Estilos generales */
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.horario_ubicacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+.horario {
+    flex: 1;
+    color: #D9A441;
+    padding: 16px;
+    border-radius: 20px;
+    border: #D9A441 3px solid;
+    margin-right: 32px;
+}
+
+.horario h2 {
+    border-bottom: 2px solid #D9A441;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.horario h3 {
+    font-size: 19px;
+    margin-bottom: 16px;
+}
+
+.horario p {
+    margin: 16px 0;
+}
+
+.horario-normal, .horario-verano {
+    background-color: white;
+    color: #333;
+    padding: 32px;
+    border: 2px solid #D9A441;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+}
+
+.mapa {
+    flex: 2;
+    height: 707px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: #D9A441 3px solid;
+}
+
+.redes-sociales {
+    flex: 1;
+    background-color: #333;
+    color: #D9A441;
+    padding: 16px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 32px;
+    display: none;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.redes img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .mapa {
+        display: none;
+    }
+
+    .horario_ubicacion {
+        flex-direction: column;
+        align-items: center;
+        padding: 16px;
+        margin: 16px;
+    }
+
+    .horario {
+        margin-right: 0;
+        margin-bottom: 16px;
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
+        text-align: justify;
+    }
+
+    .horario h2 {
+        display: none;
+    }
+
+    .redes-sociales {
+        display: block;
+        margin-top: 16px;
+        background-color: transparent;
+        color: #333;
+        padding: 0;
+        box-shadow: none;
+        text-align: center;
+        margin-top: -30px;
+    }
+
+    .redes {
+        justify-content: center;
+    }
+
+    .redes img {
+        width: 40px;
+        height: auto;
+        margin: 0 10px;
+        margin-bottom: 30px;
+    }
+}
+
+/* Responsive para tablets */
+@media (max-width: 1025px) {
+    .horario_ubicacion {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -50px;
+    }
+
+    .horario {
+        width: 85%;
+        text-align: center;
+        margin-bottom: 15px;
+        border: none;
+    }
+
+    .mapa {
+        width: 85%;
+        margin-right: 35px;
+    }
+}

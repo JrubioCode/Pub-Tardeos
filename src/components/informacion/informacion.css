@@ -1,0 +1,80 @@
+/* Estilos generales */
+* {
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #D9A441;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #D9A441;
+    border-bottom: 2px solid #D9A441;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+ul {
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+}
+
+ul li {
+    margin: 0.5rem 0;
+}
+
+/* Enlaces */
+a {
+    color: #D9A441;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 1rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
