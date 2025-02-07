@@ -53,7 +53,7 @@ Nos encontramos en una ubicación privilegiada, de fácil acceso para que siempr
 Con esta combinación de diseño y tecnología, **EL TARDEO** no solo se convierte en un destino favorito, sino en una experiencia digital inmersiva antes incluso de visitarnos.
 
 ## 🌍 Visitar web
-[EL TARDEO](https://pub-delta.vercel.app/)
+[EL TARDEO](https://pub-tardeos.vercel.app/)
 
 ## Dependencias adicionales
 Para mejorar la funcionalidad del proyecto, instala las siguientes dependencias:
